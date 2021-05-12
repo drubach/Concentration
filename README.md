@@ -1,7 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 <div>
-  <div id="container">
+  <div align="center">
     <img src="assets/images/mole.png" alt="mole cartoon"> 
   </div>
   <br>

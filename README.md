@@ -1,8 +1,8 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-<div>
+<!--<div>
   <div align="center">
-    <img src="assets/images/mole.png" alt="mole cartoon"> 
+    <img src="assets/images/mole.webp" alt="mole cartoon"> 
   </div>
   <br>
   <div>
@@ -10,7 +10,9 @@
   </div>
   <br>
   <br>
-</div>
+</div>-->
+
+# Welcome to Whack-a-mole!
 
 ## [Whack-a-mole](https://drubach.github.io/https:Whack-a-mole/) is a fun game meant to test your reflexes. Designed primarily for chldren between 5 and 13 years of age. Features include easy to operate controls, 3 levels of difficulty, entertaining images and sounds, with a cartoonish fun atmosphere.
 
@@ -206,7 +208,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
 
 - This project uses HTML, CSS and JavaScript programming languages.
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
@@ -292,6 +294,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ### Code
 - The read me was created by editing this [sample readme](https://github.com/Code-Institute-Solutions/SampleREADME) from Code Institute.
 - A significant portion of the code for this project was copied and edited from the previous projects I completed in the program.
+- Code for the game board grid was based upon guidance from the site [css-tricks.com](https://css-tricks.com/snippets/css/complete-guide-grid/).
 
 
 ### Acknowledgements

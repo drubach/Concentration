@@ -1,2 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+/*--Grid layout--*/
+.gameboard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 320px;
+    height: 320px;
+}
+
+.square {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.head-image {
+    width: 75px;
+    height: 75px;
+}
+
+.grid-image {
+    object-fit: scale-down;
+}
+
+.mole {
+    background-image: url('../images/mole.png');
+    background-size: cover;
+}
+
+.grass {
+    background-image: url('../images/grass.png');
+    background-size: cover;
+}

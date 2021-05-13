@@ -217,8 +217,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
     - The project also uses Bootstrap to provide icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
 - [Google Fonts](https://fonts.google.com/)
     - The project uses **Google fonts** to style the website fonts.
-- [Imgbb](https://imgbb.com)
-    - All external images for this project are stored on **Imgbb.com**.
 - [Jasmine](https://jasmine.github.io/)
     - This project used **Jasmine** to automatically test all JavaScript and jQuery code.
 - [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)

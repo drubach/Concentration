@@ -12,7 +12,7 @@
   <br>
 </div>
 
-## [Whack-a-mole](https://drubach.github.io/https:Whack-a-mole/) is a fun game meant to test your reflexes. Designed for primarily chldren between 5 and 13 years of age. Features include easy to operate controls, 3 levels of difficulty, entertaining images and sounds, with a cartoonish fun atmosphere.
+## [Whack-a-mole](https://drubach.github.io/https:Whack-a-mole/) is a fun game meant to test your reflexes. Designed primarily for chldren between 5 and 13 years of age. Features include easy to operate controls, 3 levels of difficulty, entertaining images and sounds, with a cartoonish fun atmosphere.
 
 
 ## [View the Whack-a-mole page](https://drubach.github.io/https:Whack-a-mole/)

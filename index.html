@@ -9,10 +9,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/sandstone/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Concentration!</title>
+    <title>Whack-a-mole</title>
 </head>
 
 <body>
+    <header class="row text-center no-gutters">
+        <div class="col">
+            <h1 class="d-inline">Whack-a-mole</h1>
+            <img class="d-inline" src="assets/images/mole.png" />
+        </div>
+    </header>
+
+    <!--Score & Timer-->
+    <div class="row text-center no-gutters">
+        <div class="col">
+            <h2 class="d-inline">Score</h2>
+            <h2 class="d-inline" id="score">0</h2>
+
+            <h2 class="d-inline">Time left</h2>
+            <h2 class="d-inline" id="seconds">60</h2>
+        </div>
+    </div>
+
+    <!--Game Board-->
+    <div id="gameboard">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+    </div>
+
+    <!--Contact footer-->
+    <footer class="bg-color-footer">
+        <div class="container-fluid">
+            <div class="row text-center no-gutters">
+                <div class="col">
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item menuitem">
+                            <a class="col-2" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item menuitem">
+                            <a class="col-2" href="https://twitter.com/" target="_blank" rel="noreferrer">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item menuitem">
+                            <a class="col-2" href="https://www.pinterest.com/" target="_blank" rel="noreferrer">
+                                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item menuitem">
+                            <a class="col-2" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item menuitem">
+                            <p class="col-2">Copyright Peaceful Stream Productions 2021
+                                <i class="far fa-copyright" aria-hidden="true"></i>
+                                <span class="sr-only">Copyright Peaceful Stream Productions</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

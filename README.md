@@ -52,11 +52,11 @@
 ### Project Goals
 
 The primary goal of Whack-a-mole is to provide a fun, child friendly game to entertain it's users.
-It has two target audiences: Pre-school children and their parents. 
+It has two target audiences: School aged children 5 to 13 and their parents. 
 
 #### Player goals
 
-The central target audience for this game is pre-school children aged 1 to 5 years old.
+The target audience for this game is children aged 5 to 13 years old.
 
 Players goals are:
 - A fun game to play.
@@ -87,7 +87,7 @@ Whack-a-mole meets these needs by:
 
 #### Developer and Business Goals
 
-- An appealing and functional website that works as expected and provides a reqarding, fun experience for the user.
+- An appealing and functional website that works as expected and provides a rewarding, fun experience for the user.
 - An educational experience in the development of an interactive website using Javascript.
 - A valuable example for the developers portfolio.
 
@@ -114,9 +114,9 @@ Design choices were made to be visually appealing to young users easy to navigat
 
 **Fonts**
 
-- The primary font **Fredoka One** was chosen because it resembles the simple letters used in products made for pre-school children. It's likeness to fridge magnets for children is nostalgic for parents as well. 
+- The primary font **XXXXX** was chosen 
 
-- The secondary font **Bubblegum Sans** was chosen for its childlike qualities, while complementing the primary font nicely in style because it is more compact.
+- The secondary font **YYYYY** was chosen f
 
 **Icons**
 
@@ -137,7 +137,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
 
 - [User info modal]()
 - [Game page]()
-- [Win pop-up]()
+- [Reset popup]()
+- [New high score popup]()
+- [Game complete popup]()
 
 ## Features
  

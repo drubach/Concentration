@@ -8,6 +8,10 @@ header {
 }
 
 /*--Score & counter formatting--*/
+.game-data {
+    padding: 15px;
+}
+
 #score {
     font-weight: bold;
 }
@@ -17,25 +21,34 @@ header {
 }
 
 
-/*--Gameboard layout--*/
+/*--Game area and board layout--*/
+.game-area {
+    background-image: url("../images/runningMole-wp.png");
+    background-size: contain;
+}
+
 .gameboard {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-rows: 100px;
+    grid-gap: 2px;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    width: 320px;
-    height: 320px;
 }
 
 .square {
     border: 2px solid black;
     width: 100px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .head-image {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
 }
 
 .grid-image {
@@ -81,11 +94,13 @@ header {
 
 /*--Footer--*/
 footer {
-    background-color: lawngreen ;
+    background-color: lawngreen;
     padding-top: 15px;
 }
 
-footer p, li, i {
+footer p,
+li,
+i {
     color: black;
     font-weight: bold;
 }

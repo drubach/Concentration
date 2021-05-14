@@ -203,7 +203,11 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
  
 ### Features Left to Implement
 ## Known Bugs 
--https://stackoverflow.com/questions/18966222/jquery-each-and-attaching-click-event
+1. Issue - Timer for the game decremented from 0 on restart of the game.
+ - Fix - Added time reset function to the start button click event. 
+2. Issue - Timer for the game decremented by one immediately on reseting with start button for second game.
+ - Fix - Added time out for 1 second on count down function on start button click. 
+
 ## Testing
 
 ## Technologies Used
@@ -228,12 +232,10 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
 - [GitHub](https://github.com/)
     - This project uses **GitHub** to store and share all project code remotely. 
     - The **Code Insititue Full Template** was used as the base of the project and Eventyret's Bootstrap 4 extension was used to generate the boilreplate HTML file. [CI Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
-- [Photoshop](www.adobe.com/Photoshop)
-    - This project used tools in **Photohshop** to edit, crop and save images as well as ulitising the colour picker to ensure color consistency over the entire project.
 - [Browserstack](https://www.browserstack.com/)
     - The project used **Browserstack** to test functionality on all browsers and devices.
 - [EZ-gif:](https://ezgif.com/png-to-webp)
-    - The original images were converted to webp format to save space and speed the loading of the web pages using this online service.
+    - The original images were resized converted to webp format to save space and speed the loading of the web pages using this online service.
 
 
 
@@ -285,7 +287,8 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 - The boot image was taken from [clipartart.com](https://clipartart.com/images/brown-boots-clipart-8.png).
 - The top hat image is from [clipartmag.com](http://clipartmag.com/images/top-hat-clipart-36.jpg).
 - The trophy image is from [png.pngtree.com](https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-trophy-vector-illustration-isolated-on-white-background-trophy-clip-art-png-image_1788588.jpg)
-- The thumbs up image is taken from [clipartkey.com](https://www.clipartkey.com/mpngs/m/186-1864825_like-png-thumbs-up-cartoon-yellow.png)
+- The thumbs up image is taken from [clipartkey.com](https://www.clipartkey.com/mpngs/m/186-1864825_like-png-thumbs-up-cartoon-yellow.png).
+- The running mole is taken from [clipartjunction.com]https://www.clipartjunction.com/wp-content/uploads/2018/10/Mole-Running-Clipart-Images-1024x911.png.
 
 - The comic-book style modal backgrounds were sourced from [freepik](https://www.freepik.com)
 - The game board background photograph was obtained from [Jason Leung on Unsplash](https://unsplash.com/photos/M55JcA9wOG0).

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
-/*--Grid layout--*/
+/*--Header--*/
+header {
+    background-color: skyblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*--Gameboard layout--*/
 .gameboard {
     display: flex;
     flex-flow: row wrap;
@@ -33,4 +40,42 @@
 .grass {
     background-image: url('../images/grass.png');
     background-size: cover;
+}
+
+.start {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+    padding: none;
+}
+
+.btn--blue {
+    border-color: black;
+    background-color: darkblue;
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: green;
+    color: white;
+}
+
+/*--Footer--*/
+footer {
+    background-color: lawngreen ;
+    padding-top: 15px;
+}
+
+footer p, li, i {
+    color: black;
+    font-weight: bold;
 }

@@ -1,22 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const square = $('.square');
+    const squares = $('.square');
     const mole = $('.mole');
     const time = $('#seconds');
     let score = $('#score');
     let result = 0;
-
-
+    var hitPos = '';
 
     function randomSquare() {
-        square.removeClass('mole');
+        squares.removeClass('mole');
         let randomId = Math.floor(Math.random() * 9);
-        let randomPos = square.eq(randomId);
+        let randomPos = squares.eq(randomId);
         randomPos.removeClass('grass').addClass('mole');
         hitPos = randomPos;
+        
         console.log(hitPos);
+        return hitPos;
     }
 
 
 
+    /*squares.foreach(square, index, arr) => {*/
+        squares.click(function() {
+        alert( "Handler for .click() called." );
+});
+        /*arr[index] = square.click;*/
+
+
+
+
+
+
     $(document).ready(randomSquare);
+
 })

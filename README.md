@@ -85,7 +85,7 @@ Parent's goals are:
 Whack-a-mole meets these needs by:
 - There is a reset data option that is easy to operate. 
 - The game includes 3 levels of difficulty (slow, med, fast) and will store high scores if desired.
-- Each game is timed for 60 seconds.
+- Each game is timed for 30 seconds.
 
 #### Developer and Business Goals
 

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let result = 0;
     let hitPos = '';
     let squareHit = '';
-    let currentTime = time.text();
+    let currentTime = 0;
     let timerId = null;
     let timerId2 = null;
     let startBtn = $("#startBtn");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function countDown() {
-        currentTime --;
+        currentTime--;
         time.text(currentTime);
         console.log(currentTime);
         if (currentTime === 0) {
@@ -39,17 +39,24 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(timerId);
             clearInterval(timerId2);
             console.log('game over');
-            time.text(11);
             currentTime = time.text();
         }
     }
 
+    function resetTime() {
+        time.text(20);
+        currentTime = time.text();
+    }
+
     startBtn.click(function () {
         score.text(0);
-        timerId2 = setInterval(randomSquare, 1000);
-        timerId = setInterval(countDown, 1000);
+        resetTime();
         randomSquare();
-        countDown();
+        setTimeout(function () {
+            countDown();
+            timerId2 = setInterval(randomSquare, 1000);
+            timerId = setInterval(countDown, 1000);
+        }, 1000);
     });
 
 })

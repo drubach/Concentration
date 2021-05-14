@@ -21,10 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return hitPos;
     }
 
-    /*function moveMole() {
-        
-    }*/
-
     squares.click(function (square) {
         squareHit = square.target;
         if (squareHit === hitPos) {

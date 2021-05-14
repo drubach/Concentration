@@ -202,7 +202,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
 13. **Footer tab**
  
 ### Features Left to Implement
-
+## Known Bugs 
+-https://stackoverflow.com/questions/18966222/jquery-each-and-attaching-click-event
+## Testing
 
 ## Technologies Used
 

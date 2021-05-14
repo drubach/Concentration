@@ -7,6 +7,16 @@ header {
     padding-bottom: 15px;
 }
 
+/*--Score & counter formatting--*/
+#score {
+    font-weight: bold;
+}
+
+#seconds {
+    font-weight: bold;
+}
+
+
 /*--Gameboard layout--*/
 .gameboard {
     display: flex;

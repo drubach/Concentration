@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(timerId);
             clearInterval(timerId2);
             console.log('game over');
-            time.text(10);
+            time.text(11);
             currentTime = time.text();
         }
     }

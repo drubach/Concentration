@@ -207,6 +207,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
  - Fix - Added time reset function to the start button click event. 
 2. Issue - Timer for the game decremented by one immediately on reseting with start button for second game.
  - Fix - Added time out for 1 second on count down function on start button click. 
+3. Issue - Score was able to be increased even after time was run out.
+ - Fix - clear randomPos and hitPos variables added to time up and start button.
 
 ## Testing
 
@@ -235,7 +237,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
 - [Browserstack](https://www.browserstack.com/)
     - The project used **Browserstack** to test functionality on all browsers and devices.
 - [EZ-gif:](https://ezgif.com/png-to-webp)
-    - The original images were resized converted to webp format to save space and speed the loading of the web pages using this online service.
+    - The original images were resized or converted to webp format to save space and speed the loading of the web pages using this online service.
 
 
 

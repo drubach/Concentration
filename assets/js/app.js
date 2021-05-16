@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let score = $('#score');
     let result = 0;
     let hitPos = '';
+    let randomPos = '';
     let squareHit = '';
     let currentTime = 0;
     let timerId = null;
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         squares.addClass('grass');
         squares.removeClass('mole');
         let randomId = Math.floor(Math.random() * 9);
-        let randomPos = squares.eq(randomId);
+        randomPos = squares.eq(randomId);
         randomPos.removeClass('grass').addClass('mole');
         hitPos = randomPos[0];
         return hitPos;
@@ -36,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentTime === 0) {
             squares.removeClass('mole');
             squares.addClass('grass');
+            randomPos = '';
+            hitPos = '';
             clearInterval(timerId);
             clearInterval(timerId2);
             console.log('game over');
@@ -51,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
     startBtn.click(function () {
         score.text(0);
         resetTime();
+        randomPos = '';
+        hitPos = '';
         randomSquare();
         setTimeout(function () {
             countDown();

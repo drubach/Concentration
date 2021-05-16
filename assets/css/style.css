@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+/*--HTML--*/
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+}
+
 /*--Header--*/
 header {
     background-color: skyblue;
@@ -22,15 +36,24 @@ header {
 
 
 /*--Game area and board layout--*/
-.game-area {
-    background-image: url("../images/runningMole-wp.png");
-    background-size: contain;
+.tb-side-area {
+    background-color: brown;
+}
+.side-area {
+    background-image: url("../images/runningMoleRepeat.png");
+    background-size: cover;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
+.game-data {
+    padding: 10px 10px 10px 10px;
+}
 .gameboard {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-auto-rows: 100px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
     grid-gap: 2px;
     flex-flow: row wrap;
     justify-content: center;
@@ -39,8 +62,8 @@ header {
 
 .square {
     border: 2px solid black;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -68,6 +91,9 @@ header {
 .start {
     padding-top: 15px;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .btn {
@@ -75,10 +101,12 @@ header {
     height: 40px;
     font-family: "Raleway", sans-serif;
     font-size: large;
+    text-emphasis: bold;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
     padding: none;
+    border: solid black 2px;
 }
 
 .btn--blue {
@@ -95,12 +123,67 @@ header {
 /*--Footer--*/
 footer {
     background-color: lawngreen;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    ;
 }
 
-footer p,
-li,
-i {
+footer li,i {
     color: black;
     font-weight: bold;
+}
+
+/* ---------------------------------------- Menu Items */
+
+.menuitem {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 0 50px 0;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    height: 75px;
+    width: 75px;
+    font-size: 18px;
+}
+
+.menuitem a:hover {
+    text-decoration: underline solid black 3px;
+}
+
+.menuitem a i {
+    display: block;
+    color: black;
+    font-size: 18px;
+}
+
+/*--Adjustments for different screen sizes--*/
+@media only screen and (max-width:768px) {
+
+    h2 {
+        text-size-adjust: 85%;
+    }
+
+    .gameboard {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-auto-rows: 100px;
+        grid-gap: 2px;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .square {
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
 }

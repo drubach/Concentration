@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Whack-a-mole</title>
+    
 </head>
 
 <body>
@@ -23,27 +24,21 @@
     </header>
 
     <!--Score & Timer-->
-    <div class="row text-center no-gutters game-data">
-        <!--<div class="tb-side-area d-none d-lg-block col-4">
-        </div>-->
+    <div class="row text-center no-gutters game-data center-content">
         <div class="col">
-            <!--<div class="d-sm-col d-lg-col-4">-->
             <h2 class="d-inline col-6"><strong>Score: </strong></h2>
             <h2 class="d-inline" id="score"><strong>0</strong></h2>
 
             <h2 class="d-inline col-6"><strong>Time left: </strong></h2>
             <h2 class="d-inline" id="seconds"><strong>20</strong></h2>
-            <!--</div>-->
         </div>
-        <!--<div class="tb-side-area d-none d-lg-block col-4">
-        </div>-->
     </div>
 
     <!--Game Area and Board-->
     <div class="row text-center no-gutters game-data">
         <div class="side-area d-none d-lg-block col-4">
         </div>
-        <div class="col">
+        <div class="col center-content">
             <div class="game-area d-sm-col d-lg-col-4">
                 <div class="gameboard" id="gameboard">
                     <div class="square grass block-inline" id="1"></div>
@@ -62,17 +57,46 @@
         </div>
     </div>
 
-    <div class="row text-center no-gutters">
-        <div class="col">
-            <!--<div class="tb-side-area d-none d-lg-block col-4">
-            </div>-->
-            <div class="start d-sm-col d-lg-col-4">
-                <div>
-                    <button class="btn btn--blue" id="startBtn"><strong>Start!</strong></button>
+    <div class="row text-center no-gutters center-content">
+        <div class="col pastScore">
+            <h2 class="d-inline"><strong>High Score:   </strong></h2>
+            <h2 class="d-inline" id="hiScore"><strong>0</strong></h2>
+        </div>
+    </div>
+
+    <div class="container-fluid center-content ">
+        <div class="col gameSpeed">
+            <div class="row text-center no-gutters">
+                <div class="col">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <div>
+                                <button class="btn btn--blue speedBtns active" id="slowBtn"><strong>Slow</strong></button>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div>
+                                <button class="btn btn--blue speedBtns inactive" id="medBtn"><strong>Med</strong></button>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div>
+                                <button class="btn btn--blue speedBtns inactive" id="fastBtn"><strong>Fast</strong></button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!--<div class="tb-side-area d-none d-lg-block col-4">
-            </div>-->
+        </div>
+    </div>
+
+    <div class="row text-center no-gutters center-content">
+        <div class="col">
+            <div class="start d-sm-col d-lg-col-4">
+                <div>
+                    <button class="btn btn--green" id="startBtn"><strong>Start!</strong></button>
+                </div>
+            </div>
         </div>
     </div>
 

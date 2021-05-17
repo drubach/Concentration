@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const squares = $('.square');
     const mole = $('.mole');
     const time = $('#seconds');
+    let speed = 1000
+    let speedBtns = $('.speedBtn');
     let score = $('#score');
     let result = 0;
     let hitPos = '';
@@ -50,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
         time.text(20);
         currentTime = time.text();
     }
+
+    speedBtns.click(function(speedBtn){
+        btnHit = speedBtn;
+        console.log(btnHit);
+    });
 
     startBtn.click(function () {
         score.text(0);

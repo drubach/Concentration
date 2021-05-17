@@ -12,6 +12,7 @@ body {
     margin: 0px;
     min-height: 100%;
     width: 100%;
+    background-color: royalblue;
 }
 
 /*--Header--*/
@@ -21,9 +22,15 @@ header {
     padding-bottom: 15px;
 }
 
+h1 {
+    font-weight: bold;
+}
+
 /*--Score & counter formatting--*/
 .game-data {
     padding: 15px;
+    color: whitesmoke;
+    padding: 10px 10px 10px 10px;
 }
 
 #score {
@@ -34,22 +41,21 @@ header {
     font-weight: bold;
 }
 
-
 /*--Game area and board layout--*/
-.tb-side-area {
-    background-color: brown;
-}
+
 .side-area {
     background-image: url("../images/runningMoleRepeat.png");
     background-size: cover;
     padding-bottom: 10px;
     justify-content: center;
     align-content: center;
+    background-color: whitesmoke;
 }
 
-.game-data {
-    padding: 10px 10px 10px 10px;
+.center-content {
+    background-color: royalblue;
 }
+
 .gameboard {
     display: grid;
     grid-template-columns: 150px 150px 150px;
@@ -58,6 +64,7 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    border-color: royalblue;
 }
 
 .square {
@@ -89,8 +96,22 @@ header {
 }
 
 .start {
-    padding-top: 15px;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pastScore {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:whitesmoke;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+}
+
+.gameSpeed {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -106,18 +127,39 @@ header {
     letter-spacing: 1.2px;
     color: white;
     padding: none;
-    border: solid black 2px;
+    border: solid white 2px;
 }
 
 .btn--blue {
-    border-color: black;
+    border-color: whitesmoke;
     background-color: darkblue;
 }
 
 .btn--blue:active,
 .btn--blue:hover {
     background-color: blue;
-    color: white;
+    border-color: whitesmoke;
+    text-emphasis: bold;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: blue;
+    border-color: whitesmoke;
+    text-emphasis: bold;
+    color: whitesmoke;
+}
+
+.btn--green {
+    border-color: white;
+    background-color: darkgreen;
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: greenyellow;
+    border-color: white;
+    color: black;
 }
 
 /*--Footer--*/
@@ -133,7 +175,7 @@ footer li,i {
     font-weight: bold;
 }
 
-/* ---------------------------------------- Menu Items */
+/*--Menu Items */
 
 .menuitem {
     height: 50px;
@@ -159,6 +201,13 @@ footer li,i {
     display: block;
     color: black;
     font-size: 18px;
+}
+
+.menuitem button {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    padding: none;
 }
 
 /*--Adjustments for different screen sizes--*/

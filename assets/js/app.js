@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
         currentTime = time.text();
     }
 
-    speedBtns.click(function(speedBtn){
-        btnHit = speedBtn;
-        console.log(btnHit);
+   speedBtns.click(function(speedBtn){
+        
+        console.log(speedBtn);
     });
 
     startBtn.click(function () {

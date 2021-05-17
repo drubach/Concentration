@@ -3,13 +3,14 @@
 /*--HTML--*/
 
 html {
+    position: relative;
     margin: 0px;
     height: 100%;
     width: 100%;
 }
 
 body {
-    margin: 0px;
+    margin: 0 0 50px;
     min-height: 100%;
     width: 100%;
     background-color: royalblue;
@@ -23,11 +24,17 @@ header {
 }
 
 h1 {
+    font-family: "Lato", sans-serif;
     font-weight: bold;
 }
 
 /*--Score & counter formatting--*/
+h2 {
+    font-family: "Lato", sans-serif;
+}
+
 .game-data {
+    font-family: "Roboto", sans-serif;
     padding: 15px;
     color: whitesmoke;
     padding: 10px 10px 10px 10px;
@@ -50,6 +57,14 @@ h1 {
     justify-content: center;
     align-content: center;
     background-color: whitesmoke;
+}
+
+.bottom-fill {
+    background-color: royalblue;
+    /*--height: 100%;
+    width: 100%;--*/
+    justify-content: center;
+    align-content: center;
 }
 
 .center-content {
@@ -102,15 +117,6 @@ h1 {
     align-content: center;
 }
 
-.pastScore {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color:whitesmoke;
-    font-weight: bold;
-    padding: 10px 10px 10px 10px;
-}
-
 .gameSpeed {
     display: flex;
     justify-content: center;
@@ -120,11 +126,12 @@ h1 {
 .btn {
     width: 100px;
     height: 40px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: large;
+    text-align: center;
     text-emphasis: bold;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
     color: white;
     padding: none;
     border: solid white 2px;
@@ -164,24 +171,27 @@ h1 {
 
 /*--Footer--*/
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: lawngreen;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    ;
+    padding-top: none;
+    padding-bottom: none;
 }
 
-footer li,i {
+footer li,
+i {
     color: black;
     font-weight: bold;
 }
 
 /*--Menu Items */
-
 .menuitem {
     height: 50px;
     width: 50px;
     text-align: center;
-    padding: 0 50px 0;
+    padding: 0 3px 0;
 }
 
 .menuitem a {
@@ -214,7 +224,7 @@ footer li,i {
 @media only screen and (max-width:768px) {
 
     h2 {
-        text-size-adjust: 85%;
+        font-size: 90%;
     }
 
     .gameboard {
@@ -234,5 +244,26 @@ footer li,i {
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+
+    .btn {
+        width: 75px;
+        height: 25px;
+        font-size: small;
+        padding-bottom: 25px;
+    }
+
+    .menuitem {
+        font-size: 70%;
+        padding: none;
+    }
+
+    .menuitem a i {
+        font-size: 70%;
+    }
+
+    .copyright {
+        font-size: 70%;
+        padding: none;
     }
 }

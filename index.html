@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Whack-a-mole</title>
-    
+    <link rel="icon" href="data:,">
+
 </head>
 
 <body>
     <header class="row text-center no-gutters">
         <div class="col">
             <h1 class="d-inline">Whack-a-mole</h1>
-            <img class="head-image d-inline" src="assets/images/mole.png" />
+            <img class="head-image d-inline" src="assets/images/mole.png" alt="Mole logo"/>
         </div>
         <br>
         <br>
@@ -36,10 +37,10 @@
 
     <!--Game Area and Board-->
     <div class="row text-center no-gutters game-data">
-        <div class="side-area d-none d-lg-block col-4">
+        <div class="side-area d-none d-xl-block col-4">
         </div>
         <div class="col center-content">
-            <div class="game-area d-sm-col d-lg-col-4">
+            <div class="game-area d-xs-col d-xl-col-4">
                 <div class="gameboard" id="gameboard">
                     <div class="square grass block-inline" id="1"></div>
                     <div class="square grass block-inline" id="2"></div>
@@ -53,16 +54,16 @@
                 </div>
             </div>
         </div>
-        <div class="side-area d-none d-lg-block col-4">
+        <div class="side-area d-none d-xl-block col-4">
         </div>
     </div>
 
-    <div class="row text-center no-gutters center-content">
+   <!-- <div class="row text-center no-gutters center-content">
         <div class="col pastScore">
-            <h2 class="d-inline"><strong>High Score:   </strong></h2>
+            <h2 class="d-inline"><strong>High Score: </strong></h2>
             <h2 class="d-inline" id="hiScore"><strong>0</strong></h2>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid center-content ">
         <div class="col gameSpeed">
@@ -71,17 +72,20 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <div>
-                                <button class="btn btn--blue speedBtns active" id="slowBtn"><strong>Slow</strong></button>
+                                <button class="btn btn--blue speedBtns active"
+                                    id="slowBtn"><strong>Slow</strong></button>
                             </div>
                         </li>
                         <li class="list-inline-item">
                             <div>
-                                <button class="btn btn--blue speedBtns inactive" id="medBtn"><strong>Med</strong></button>
+                                <button class="btn btn--blue speedBtns inactive"
+                                    id="medBtn"><strong>Med</strong></button>
                             </div>
                         </li>
                         <li class="list-inline-item">
                             <div>
-                                <button class="btn btn--blue speedBtns inactive" id="fastBtn"><strong>Fast</strong></button>
+                                <button class="btn btn--blue speedBtns inactive"
+                                    id="fastBtn"><strong>Fast</strong></button>
                             </div>
                         </li>
                     </ul>
@@ -92,7 +96,7 @@
 
     <div class="row text-center no-gutters center-content">
         <div class="col">
-            <div class="start d-sm-col d-lg-col-4">
+            <div class="start d-xs-col d-xl-col-4">
                 <div>
                     <button class="btn btn--green" id="startBtn"><strong>Start!</strong></button>
                 </div>
@@ -100,6 +104,15 @@
         </div>
     </div>
 
+    <div class="container-fluid center-content bottom-fill">
+        <div class="col">
+            <div class="row text-center no-gutters">
+                <div class= "d-none d-lg-block col-lg d-xl-none">
+                    <img src="images/runningMoleRepeat.png" alt = "Running Mole and hammer repeated" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Contact footer-->
     <footer class="bg-color-footer">
@@ -108,19 +121,19 @@
                 <div class="col">
                     <ul class="list-inline social-links">
                         <li class="list-inline-item menuitem">
-                            <a class="col-2" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                            <a class="col" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                                 <i class="fab fa-facebook-square" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
                         </li>
                         <li class="list-inline-item menuitem">
-                            <a class="col-2" href="https://twitter.com/" target="_blank" rel="noreferrer">
+                            <a class="col" href="https://twitter.com/" target="_blank" rel="noreferrer">
                                 <i class="fab fa-twitter" aria-hidden="true"></i>
                                 <span class="sr-only">Twitter</span>
                             </a>
                         </li>
                         <li class="list-inline-item menuitem">
-                            <a class="col-2" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                            <a class="col" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
@@ -129,7 +142,7 @@
                 </div>
             </div>
             <div class="row text-center no-gutters">
-                <p class="col-12">Copyright Peaceful Stream Productions 2021
+                <p class="copyright col-12">Copyright Peaceful Stream Productions 2021
                     <i class="far fa-copyright" aria-hidden="true"></i>
                     <span class="sr-only">Copyright Peaceful Stream Productions</span>
                 </p>

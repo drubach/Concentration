@@ -209,6 +209,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/). during th
  - Fix - Added time out for 1 second on count down function on start button click. 
 3. Issue - Score was able to be increased even after time was run out.
  - Fix - clear randomPos and hitPos variables added to time up and start button.
+4. Issue - GET http://localhost:8080/favicon.ico 404 (Not Found) error.
+ - Fix - Added <link rel="icon" href="data:,"> code to head of index.html per [GitHub repository for issue](https://github.com/gridsome/gridsome/issues/711).
 
 ## Testing
 

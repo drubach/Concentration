@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    margin: 0 0 50px;
+    margin: 0 0 25px;
     min-height: 100%;
     width: 100%;
     background-color: royalblue;
@@ -19,6 +19,7 @@ body {
 /*--Header--*/
 header {
     background-color: skyblue;
+    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -31,11 +32,11 @@ h1 {
 /*--Score & counter formatting--*/
 h2 {
     font-family: "Lato", sans-serif;
+    font-size: xx-large;
 }
 
 .game-data {
     font-family: "Roboto", sans-serif;
-    padding: 15px;
     color: whitesmoke;
     padding: 10px 10px 10px 10px;
 }
@@ -57,14 +58,6 @@ h2 {
     justify-content: center;
     align-content: center;
     background-color: whitesmoke;
-}
-
-.bottom-fill {
-    background-color: royalblue;
-    /*--height: 100%;
-    width: 100%;--*/
-    justify-content: center;
-    align-content: center;
 }
 
 .center-content {
@@ -111,7 +104,7 @@ h2 {
 }
 
 .start {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -137,12 +130,12 @@ h2 {
     border: solid white 2px;
 }
 
-.btn--blue {
+/*.btn--blue {
     border-color: whitesmoke;
     background-color: darkblue;
 }
 
-.btn--blue:active,
+.btn--blue.active,
 .btn--blue:hover {
     background-color: blue;
     border-color: whitesmoke;
@@ -155,7 +148,7 @@ h2 {
     border-color: whitesmoke;
     text-emphasis: bold;
     color: whitesmoke;
-}
+}*/
 
 .btn--green {
     border-color: white;
@@ -198,8 +191,8 @@ i {
     width: 100%;
     text-decoration: none;
     color: black;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     font-size: 18px;
 }
 
@@ -222,9 +215,9 @@ i {
 
 /*--Adjustments for different screen sizes--*/
 @media only screen and (max-width:768px) {
-
+    
     h2 {
-        font-size: 90%;
+        font-size: x-large;
     }
 
     .gameboard {
@@ -246,12 +239,12 @@ i {
         align-content: center;
     }
 
-    .btn {
+    /*.btn {
         width: 75px;
         height: 25px;
         font-size: small;
         padding-bottom: 25px;
-    }
+    }*/
 
     .menuitem {
         font-size: 70%;
@@ -260,10 +253,69 @@ i {
 
     .menuitem a i {
         font-size: 70%;
+        padding: none;
     }
 
     .copyright {
         font-size: 70%;
         padding: none;
     }
+}
+
+@media only screen and (max-width:360px) {
+    
+    h2 {
+        font-size: large;
+    }
+
+    .gameboard {
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        grid-auto-rows: 70px;
+        grid-gap: 2px;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        padding: none;
+    }
+
+    .square {
+        border: 2px solid black;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+   /* .btn {
+        width: 75px;
+        height: 10px;
+        font-size: small;
+        padding-bottom: 25px;
+    }*/
+
+    .menuitem {
+        font-size: 65%;
+        padding: none;
+    }
+
+    .menuitem a i {
+        font-size: 65%;
+        padding: none;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    
+    h2 {
+        font-size: medium;
+    }
+
+    /*.btn {
+        width: 60px;
+        height: 10px;
+        font-size: x-small;
+        padding-bottom: 25px;
+    }*/
 }

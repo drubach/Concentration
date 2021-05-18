@@ -2,8 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const squares = $('.square');
     const mole = $('.mole');
     const time = $('#seconds');
-    let speed = 1000
-    let speedBtns = $('.speedBtn');
+    /*const slowBtn = $('#slowBtn');
+    const medBtn = $('#medBtn');
+    const fastBtn = $('#fastBtn');*/
+    let speed = 1000;
+    /*let speedPick = '';
+    let speedBtns = $('.speedBtn');*/
     let score = $('#score');
     let result = 0;
     let hitPos = '';
@@ -37,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         time.text(currentTime);
         console.log(currentTime);
         if (currentTime === 0) {
+           /* startBtn.removeClass('active');
+            slowBtn.removeClass('active');*/
             squares.removeClass('mole');
             squares.addClass('grass');
             randomPos = '';
@@ -53,12 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
         currentTime = time.text();
     }
 
-   speedBtns.click(function(speedBtn){
-        
-        console.log(speedBtn);
-    });
+   /*speedBtns.click(function(speedBtn){
+        speedBtn.addClass('active');
+    });*/
 
     startBtn.click(function () {
+        /*if (speedPick === '') {
+            alert("Please choose speed")
+        }
+        console.log(slowBtn);*/
         score.text(0);
         resetTime();
         randomPos = '';
@@ -66,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         randomSquare();
         setTimeout(function () {
             countDown();
-            timerId2 = setInterval(randomSquare, 1000);
+            timerId2 = setInterval(randomSquare, speed);
             timerId = setInterval(countDown, 1000);
         }, 1000);
     });

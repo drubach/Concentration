@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const squares = $('.square');
     const mole = $('.mole');
     const time = $('#seconds');
-    let speed = 1000;
     let score = $('#score');
     let result = 0;
+    let hiScore = '';
     let hitPos = '';
     let randomPos = '';
     let squareHit = '';
@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
         squares.addClass('grass');
         squares.removeClass('mole');
         let randomId = Math.floor(Math.random() * 9);
-        randomPos = squares.eq(randomId);
+        if (randomPos === squares.eq(randomId)) {
+            randomId = Math.floor(Math.random() * 9);
+        } else {
+            randomPos = squares.eq(randomId);
+        }
         randomPos.removeClass('grass').addClass('mole');
         hitPos = randomPos[0];
         return hitPos;
@@ -52,8 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         currentTime = time.text();
     }
 
-   
-
     startBtn.click(function () {
         score.text(0);
         resetTime();
@@ -62,7 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
         randomSquare();
         setTimeout(function () {
             countDown();
-            timerId2 = setInterval(randomSquare, speed);
+            if (currentTime >= 15) {
+                timerId2 = setInterval(randomSquare, 900);
+            } else if (currentTime >= 10) {
+                timerId2 = setInterval(randomSquare, 700);
+            } else if (currentTime >= 5) {
+                timerId2 = setInterval(randomSquare, 500);
+            } else {
+                timerId2 = setInterval(randomSquare, 300);
+            }
             timerId = setInterval(countDown, 1000);
         }, 1000);
     });

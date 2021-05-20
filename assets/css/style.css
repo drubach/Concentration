@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Exo:100,200,300,400,500,600,700&display=swap');
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
 
 /*--HTML--*/
 
@@ -27,14 +35,14 @@ header {
 }
 
 h1 {
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: xx-large;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 /*--Score & counter formatting--*/
 h2 {
-    font-family: "Lato", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 700;
     font-size: x-large;
 }
@@ -56,7 +64,7 @@ h2 {
 /*--Game area and board layout--*/
 
 .side-area {
-    background-image: url("../images/runningMoleRepeat.png");
+    background-image: url("../images/runningMoleRepeat.webp");
     background-size: cover;
     padding-bottom: 10px;
     justify-content: center;
@@ -98,12 +106,12 @@ h2 {
 }
 
 .mole {
-    background-image: url('../images/mole.png');
+    background-image: url('../images/mole.webp');
     background-size: cover;
 }
 
 .grass {
-    background-image: url('../images/grass.png');
+    background-image: url('../images/grass.webp');
     background-size: cover;
 }
 
@@ -168,6 +176,7 @@ i {
 .menuitem {
     height: 50px;
     width: 50px;
+    font-size: 18px;
     text-align: center;
     padding: 0 3px 0;
 }
@@ -196,6 +205,10 @@ i {
     justify-content: center;
     align-content: center;
     padding: none;
+}
+
+.copyright {
+    font-size: 12px;
 }
 
 /*--Adjustments for different screen sizes--*/
@@ -227,17 +240,16 @@ i {
     }
 
     .menuitem {
-        font-size: 70%;
+        font-size: 80%;
         padding: none;
     }
 
     .menuitem a i {
-        font-size: 70%;
+        font-size: 80%;
         padding: none;
     }
 
     .copyright {
-        font-size: 70%;
         padding: none;
     }
 }
@@ -268,13 +280,6 @@ i {
         align-content: center;
     }
 
-    /* .btn {
-        width: 75px;
-        height: 10px;
-        font-size: small;
-        padding-bottom: 25px;
-    }*/
-
     .menuitem {
         font-size: 65%;
         padding: none;
@@ -300,11 +305,4 @@ i {
         width: 35px;
         height: 35px;
     }
-
-    /*.btn {
-        width: 60px;
-        height: 10px;
-        font-size: x-small;
-        padding-bottom: 25px;
-    }*/
 }

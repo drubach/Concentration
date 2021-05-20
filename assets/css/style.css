@@ -115,6 +115,11 @@ h2 {
     background-size: cover;
 }
 
+.hammer {
+    background-image: url('../images/hammer.webp');
+    background-size: cover;
+}
+
 .start {
     padding-bottom: 25px;
     display: flex;

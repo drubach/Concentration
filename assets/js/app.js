@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let startBtn = $("#startBtn");
 
     function randomSquare() {
-        squares.addClass('grass');
+        squares.removeClass('hammer');
         squares.removeClass('mole');
+        squares.addClass('grass');
         let randomId = Math.floor(Math.random() * 9);
         if (randomPos === squares.eq(randomId)) {
             randomId = Math.floor(Math.random() * 9);
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (squareHit === hitPos) {
             result = result + 1;
             score.text(result);
+            randomPos.removeClass('mole').addClass('hammer');
         }
     });
 

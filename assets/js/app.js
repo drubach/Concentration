@@ -2,12 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const squares = $('.square');
     const mole = $('.mole');
     const time = $('#seconds');
-    /*const slowBtn = $('#slowBtn');
-    const medBtn = $('#medBtn');
-    const fastBtn = $('#fastBtn');*/
     let speed = 1000;
-    /*let speedPick = '';
-    let speedBtns = $('.speedBtn');*/
     let score = $('#score');
     let result = 0;
     let hitPos = '';
@@ -41,8 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         time.text(currentTime);
         console.log(currentTime);
         if (currentTime === 0) {
-           /* startBtn.removeClass('active');
-            slowBtn.removeClass('active');*/
             squares.removeClass('mole');
             squares.addClass('grass');
             randomPos = '';
@@ -59,15 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
         currentTime = time.text();
     }
 
-   /*speedBtns.click(function(speedBtn){
-        speedBtn.addClass('active');
-    });*/
+   
 
     startBtn.click(function () {
-        /*if (speedPick === '') {
-            alert("Please choose speed")
-        }
-        console.log(slowBtn);*/
         score.text(0);
         resetTime();
         randomPos = '';

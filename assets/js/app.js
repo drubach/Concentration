@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let score = $('#score');
     let speed = 1000;
     let result = 0;
-    let hiScore = '';
+    let hiScore = 0;
+    let gameCount = 0;
     let hitPos = '';
     let randomPos = '';
     let squareHit = '';
     let currentTime = 0;
     let timerId = null;
     let timerId2 = null;
+    let timerId3 = null;
     let startBtn = $("#startBtn");
 
     function randomSquare() {
@@ -38,20 +40,52 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    function scoreStore() {
+        if (confirm('Would you like to keep track of your high score?')) {
+            // Save it!
+            hiScore = result;
+            console.log('Score saved.' + hiScore + 'gameCount' + gameCount);
+        } else {
+            // Do nothing!
+            console.log('Not saved.' + hiScore + 'gameCount' + gameCount);
+        }
+        return hiScore;
+    }
+
+    function scoreModal() {
+        if (gameCount === 1) {
+            scoreStore();            
+        } else if (gameCount != 1 && hiScore > 0 && result > hiScore) {
+            hiScore = result;
+            alert("Congratulations!! Your new high score is: " + hiScore);            
+        } else {
+            alert("Great job!!");
+        }
+        return hiScore;
+    }
+
     function countDown() {
         currentTime--;
         time.text(currentTime);
-        console.log(currentTime);
+        console.log(currentTime + 'speed:' + speed);
         if (currentTime === 0) {
             squares.removeClass('mole');
             squares.addClass('grass');
             randomPos = '';
             hitPos = '';
+            speed = 1000;
             clearInterval(timerId);
             clearInterval(timerId2);
-            console.log('game over');
+            clearInterval(timerId3)
+            console.log('game over' + 'Game Count:' + gameCount);
             currentTime = time.text();
+            setTimeout(function (){
+                scoreModal();
+            },500);
+            gameCount = gameCount + 1;
+            console.log('game count:' + gameCount);
         }
+        return gameCount;
     }
 
     function resetTime() {
@@ -60,15 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function speedChng() {
-        if (currentTime >= 15) {
-            speed = 900;
-        } else if (currentTime >= 10) {
-            speed = 700;
-        } else if (currentTime >= 5) {
-            speed = 500;
-        } else {
-            speed = 300;
-        }
+        speed = speed - 200;
+        return speed;
     }
 
     startBtn.click(function () {
@@ -78,12 +105,15 @@ document.addEventListener("DOMContentLoaded", function () {
         randomPos = '';
         hitPos = '';
         randomSquare();
+        timerId2 = setInterval(randomSquare, speed);
         setTimeout(function () {
             countDown();
-            speedChng();
-            timerId2 = setInterval(randomSquare, speed);
             timerId = setInterval(countDown, 1000);
         }, 1000);
+        setTimeout(function () {
+            speedChng();
+            timerId3 = setInterval(speedChng, 5000);
+        }, 5000)
     });
 
 })

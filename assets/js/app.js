@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (gameCount != 1 && hiScore > 0 && result > hiScore) {
             hiScore = result;
             alert("Congratulations!! Your new high score is: " + hiScore);            
+        } else if (gameCount != 1 && hiScore > 0 && result <= hiScore) {
+            alert("Great job! Try again to beat your high score of " + hiScore + ".");
         } else {
             alert("Great job!!");
         }

@@ -160,6 +160,10 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/).
     - Fix - Added code for a generic link to a tab icon to the head of index.html per [GitHub repository for issue](https://github.com/gridsome/gridsome/issues/711).
 
 ## Testing
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers and found to function correctly.
+-   The website was viewed and tested on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX and found to function correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - Results - <a href="assets/images/html_results.pdf"></a> <a href="assets/images/html_results.pdf" class="image fit" type="application/pdf"><span>html_results</span></a>

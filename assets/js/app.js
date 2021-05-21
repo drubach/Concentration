@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    /* Code to create this modal was taken from https://stackoverflow.com/questions/9334636/how-to-create-a-dialog-with-yes-and-no-options */
     function scoreStore() {
         if (confirm('Would you like to keep track of your high score?')) {
             // Save it!
@@ -51,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return hiScore;
     }
-
     function scoreModal() {
         if (gameCount === 1) {
             scoreStore();            

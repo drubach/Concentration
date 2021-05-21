@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mole = $('.mole');
     const time = $('#seconds');
     let score = $('#score');
+    let speed = 1000;
     let result = 0;
     let hiScore = '';
     let hitPos = '';
@@ -58,7 +59,20 @@ document.addEventListener("DOMContentLoaded", function () {
         currentTime = time.text();
     }
 
+    function speedChng() {
+        if (currentTime >= 15) {
+            speed = 900;
+        } else if (currentTime >= 10) {
+            speed = 700;
+        } else if (currentTime >= 5) {
+            speed = 500;
+        } else {
+            speed = 300;
+        }
+    }
+
     startBtn.click(function () {
+        result = 0;
         score.text(0);
         resetTime();
         randomPos = '';
@@ -66,15 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
         randomSquare();
         setTimeout(function () {
             countDown();
-            if (currentTime >= 15) {
-                timerId2 = setInterval(randomSquare, 900);
-            } else if (currentTime >= 10) {
-                timerId2 = setInterval(randomSquare, 700);
-            } else if (currentTime >= 5) {
-                timerId2 = setInterval(randomSquare, 500);
-            } else {
-                timerId2 = setInterval(randomSquare, 300);
-            }
+            speedChng();
+            timerId2 = setInterval(randomSquare, speed);
             timerId = setInterval(countDown, 1000);
         }, 1000);
     });

@@ -139,11 +139,9 @@ h2 {
     font-family: "Roboto", sans-serif;
     font-size: large;
     text-align: center;
-    text-emphasis: bold;
     text-transform: uppercase;
     letter-spacing: 1.1px;
     color: white;
-    padding: none;
     border: solid white 2px;
 }
 
@@ -161,13 +159,11 @@ h2 {
 
 /*--Footer--*/
 footer {
-    position: fixed;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: lawngreen;
-    padding-top: none;
-    padding-bottom: none;
     border: solid 10px black;
 }
 
@@ -196,7 +192,7 @@ i {
 }
 
 .menuitem a:hover {
-    text-decoration: underline solid black 3px;
+    text-decoration: underline solid black;
 }
 
 .menuitem a i {
@@ -209,7 +205,6 @@ i {
     display: inline-flex;
     justify-content: center;
     align-content: center;
-    padding: none;
 }
 
 .copyright {
@@ -250,16 +245,10 @@ i {
 
     .menuitem {
         font-size: 80%;
-        padding: none;
     }
 
     .menuitem a i {
         font-size: 80%;
-        padding: none;
-    }
-
-    .copyright {
-        padding: none;
     }
 }
 
@@ -277,7 +266,6 @@ i {
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        padding: none;
     }
 
     .square {
@@ -291,12 +279,10 @@ i {
 
     .menuitem {
         font-size: 65%;
-        padding: none;
     }
 
     .menuitem a i {
         font-size: 65%;
-        padding: none;
     }
 }
 

@@ -1,15 +1,12 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Welcome to Whack-a-mole!
-
 ![Mole Image](/assets/images/mole.png "image of cartoon mole")
+# Welcome to Whack-a-mole!
 
 ## [Whack-a-mole](https://drubach.github.io/https:Whack-a-mole/) is a fun game meant to test your reflexes designed primarily for chldren between 5 and 13 years of age. Features include easy to operate controls, increasing difficulty and entertaining images with a cartoonish fun atmosphere.
 
 ## [View Whack-a-mole project here](https://drubach.github.io/https:Whack-a-mole/)
-
 ![Screenshots](/assets/images/screenshotsMS2.png "Screenshots of game")
-
 
 ## Table of Contents
 1. [**UX**](#ux)
@@ -82,6 +79,94 @@ Whack-a-mole meets these needs by:
 - A valuable example for the developers portfolio.
 
 #### User Stories
+- As a player aged between 5-13 years old, I want:
+1. Easily understood and operated controls.
+2. Responsive and functional on all devices.
+3. Feedback to know when I have been successful or not.
+4. Increase the challenge when my abilities improve.
+5. Positive feedback when I hit a new high score.
+6. Appealing icons and images that I can understand.
+
+- As a parent of a player, I want:
+1. An appealing game, so that my child and I can have a positive experience when using it.
+2. To know who developed the game and to be able to contact them easily. 
+
+### Design Choices
+- Design choices were made to be visually appealing to young users easy to navigate and play the game. 
+
+**Fonts**
+- The primary font **Roboto** was chosen and **Sans Serif** is used as a back up in case of a failure to load.
+
+**Colors**
+- The main colors used are **light blue**, **royal blue**, and **lawn green**.
+
+**Styling**
+- Styling is purposely colorful, complementary in contrast with large dark borders. Images are cartoon-like and brightly colored as well.
+
+**Backgrounds**
+- The header background is **light blue**.
+- The body background is **royal blue**.
+- The footer background is **lawn green**.
+
+### Wireframes
+Wireframes were created using [Balsamiq](https://balsamiq.com/) during the design phase of the project. -   The wireframes that were developed were ideational. After discussions with my mentor and input from friends and family, colors and other design elements were adjusted to be more attractive. 
+#### Game site
+![Screenshot wireframes](/assets/images/wireframesScreenSm.png "Screen design wireframes")
+#### High score alert
+![High score wireframe](/assets/images/hiScorePopupSm.png "High score popup wireframe")
+#### Good job alert
+![Good job wireframe](/assets/images/goodJobPopupSm.png "Good job popup wireframe")
+
+## Features
+### Existing Features
+1. Resizes autmatically for different screen sizes.
+2. Automatically increases in difficulty as the game is played by speeding up.
+3. Provides for voluntary high score saving by using windows local storage.
+4. If high score is saved, it acknowledges when a new high score is reached.
+5. If the high score is not beaten or is not saved, it will still provide a "good job" popup.
+6. Automatically counts down and records the score.
+7. Provides copyright and contact information for the developer.
+8. Provides feedback on a good hit by changing the image to a hammer.
+
+### Potential Future Features
+1. Providing 3 levels of difficulty to extend the use even further.
+2. Sounds to provide additional feedback to gameplay.
+3. Customize and improve the look of the popups.
+
+### Known Bugs 
+1. Issue - Timer for the game decremented from 0 on restart of the game.
+    - Fix - Added time reset function to the start button click event. 
+
+2. Issue - Timer for the game decremented by one immediately on reseting with start button for second game.
+    - Fix - Added time out for 1 second on count down function on start button click. 
+
+3. Issue - Score was able to be increased even after time was run out.
+    - Fix - clear randomPos and hitPos variables added to time up and start button.
+
+4. Issue - GET http://localhost:8080/favicon.ico 404 (Not Found) error.
+    - Fix - Added code for a generic link to a tab icon to the head of index.html per [GitHub repository for issue](https://github.com/gridsome/gridsome/issues/711).
+
+## Testing
+### Functionality
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers and found to function correctly.
+-   The website was viewed and tested on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX and found to function correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+### Website Performance
+Lighthouse developer tools were used to test the website performance. The four areas were examined load performance, accessibility, best practices and search engine optimiztation.
+#### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- ![Lighthouse Performance Test](/assets/images/LighthousePerfTestSm.png "Lighthouse performance test results")
+
+### Code Syntax
+Three different online tools were used to validate there were no syntax errors in the project.
+#### [W3C HTML Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+- ![W3C HTML test](/assets/images/w3cHTMLtestSM.png "W3C HTML validation results")
+#### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+- ![W3C CSS test](/assets/images/w3cCSStestSm.png "W3C CSS validation results")
+#### [ExtendsClass Validator](https://extendsclass.com/javascript-fiddle.html)
+- ![ExtendsClass Javascript test](/assets/images/jsTestSm.png "ExtendsClass Javascript validation results")
+
+### User Stories
 As a player aged between 5-13 years old, I want:
 1. Easily understood and operated controls.
 2. Responsive and functional on all devices.
@@ -106,70 +191,6 @@ These needs are met by:
 1. The game is responsive on all devices and platforms and design choices emphasize color and simple fun graphics.
 2. There is a simple footer that identifies the developer and provides links to social media for contact purposes.
 
-### Design Choices
-- Design choices were made to be visually appealing to young users easy to navigate and play the game. 
-
-**Fonts**
-- The primary font **Roboto** was chosen and **Sans Serif** is used as a back up in case of a failure to load.
-
-**Colors**
-- The main colors used are **light blue**, **royal blue**, and **lawn green**.
-
-**Styling**
-- Styling is purposely colorful, complementary in contrast with large dark borders. Images are cartoon-like and brightly colored as well.
-
-**Backgrounds**
-- The header background is **light blue**.
-- The body background is **royal blue**.
-- The footer background is **lawn green**.
-
-### Wireframes
-These wireframes were created using [Balsamiq](https://balsamiq.com/).
-
-- [Game page]()
-- [New high score popup]()
-- [Good job popup]()
-
-## Features
-### Existing Features
-1. Resizes autmatically for different screen sizes.
-2. Automatically increases in difficulty as the game is played by speeding up.
-3. Provides for voluntary high score saving.
-4. If high score is saved, it acknowledges when a new high score is reached.
-5. If the high scored is not beaten or is not saved, it will still provide a "good job" popup.
-6. Automatically counts down and records the score.
-7. Provides copyright and contact information for the developer.
-8. Provides feedback on a good hit by changing the image to a hammer.
-
-### Features Left to Implement
-1. Providing 3 levels of difficulty to extend the use even further.
-2. Sounds to provide additional feedback to gameplay.
-3. Customize and improve the look of the popups.
-
-### Known Bugs 
-1. Issue - Timer for the game decremented from 0 on restart of the game.
-    - Fix - Added time reset function to the start button click event. 
-
-2. Issue - Timer for the game decremented by one immediately on reseting with start button for second game.
-    - Fix - Added time out for 1 second on count down function on start button click. 
-
-3. Issue - Score was able to be increased even after time was run out.
-    - Fix - clear randomPos and hitPos variables added to time up and start button.
-
-4. Issue - GET http://localhost:8080/favicon.ico 404 (Not Found) error.
-    - Fix - Added code for a generic link to a tab icon to the head of index.html per [GitHub repository for issue](https://github.com/gridsome/gridsome/issues/711).
-
-## Testing
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers and found to function correctly.
--   The website was viewed and tested on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX and found to function correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
-
-The W3C Markup Validator and W3C CSS Validator Services were used to validate there were no syntax errors in the project.
-
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - Results - <a href="assets/images/html_results.pdf"></a> <a href="assets/images/html_results.pdf" class="image fit" type="application/pdf"><span>html_results</span></a>
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - Results - <a href="assets/images/css_results.pdf"></a> <a href="assets/images/css_results.pdf" class="image fit" type="application/pdf"><span>css_results</span></a>
-
-
 ## Technologies Used
 ### Langauges Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -183,7 +204,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
     - Google fonts were used to import the 'Roboto' font into the style.css file which is used throughout the project.
 3. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used  to add icons for aesthetic and UX purposes.
-4. [jQuery:](https://jquery.com/)
+4. [jQuery 3.5.1:](https://jquery.com/)
     - jQuery was added directly to the project in a minimized format to speed the loading of the functionality provided by jQuery.
 5. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -194,10 +215,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 8. [EZ-gif:](https://ezgif.com/png-to-webp)
     - The original images were resized and converted to webp format to save space and speed the loading of the web pages using this online service.
-9. [Jasmine](https://jasmine.github.io/)
-    - This project used **Jasmine** to automatically test all JavaScript and jQuery code.
-10. [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)
-    - This project used **Jasmine-jQuery** CDN to make it possible to test jQuery code using Jasmine.
 
 ## Deployment
 This project was developed using the [Gitpod IDE](https://gitpod.io), committed to git and pushed to GitHub. 

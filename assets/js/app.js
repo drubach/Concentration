@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const squares = $('.square');
-    const mole = $('.mole');
     const time = $('#seconds');
     const hiScoreDisplay = $('#high-score-display');
     let hiScoreValue = $('#hiScore');
@@ -98,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             speed = 1000;
             clearInterval(timerId);
             clearInterval(timerId2);
-            clearInterval(timerId3)
+            clearInterval(timerId3);
             console.log('game over' + 'Game Count:' + gameCount);
             currentTime = time.text();
             setTimeout(function () {
@@ -135,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             speedChng();
             timerId3 = setInterval(speedChng, 5000);
-        }, 5000)
+        }, 5000);
     });
 
-})
+});

@@ -13,7 +13,7 @@
     - [**Project Goals**](#project-goals)
     - [**Player goals**](#player-goals)
     - [**Parental goals**](#parental-goals)
-    - [**Developer and Business Goals**](#developer-and-Business-Goals)
+    - [**Developer and Business Goals**](#developer-and-business-goals)
     - [**User Stories**](#user-stories)
     - [**Design choices**](#design-choices)
     - [**Wireframes**](#wireframes)
@@ -79,7 +79,7 @@ Whack-a-mole meets these needs by:
 - A valuable example for the developers portfolio.
 
 #### User Stories
-- As a player aged between 5-13 years old, I want:
+- As a **player** aged between 5-13 years old, I want:
 1. Easily understood and operated controls.
 2. Responsive and functional on all devices.
 3. Feedback to know when I have been successful or not.
@@ -87,7 +87,7 @@ Whack-a-mole meets these needs by:
 5. Positive feedback when I hit a new high score.
 6. Appealing icons and images that I can understand.
 
-- As a parent of a player, I want:
+- As a **parent of a player**, I want:
 1. An appealing game, so that my child and I can have a positive experience when using it.
 2. To know who developed the game and to be able to contact them easily. 
 

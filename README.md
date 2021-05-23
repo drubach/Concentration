@@ -153,7 +153,7 @@ Wireframes were created using [Balsamiq](https://balsamiq.com/) during the desig
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Website Performance
-Lighthouse developer tools were used to test the website performance. The four areas were examined load performance, accessibility, best practices and search engine optimiztation.
+Lighthouse developer tools were used to test the website performance. The four areas examined are load performance, accessibility, best practices and search engine optimiztation.
 #### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - ![Lighthouse Performance Test](/assets/images/LighthousePerfTestSm.png "Lighthouse performance test results")
 

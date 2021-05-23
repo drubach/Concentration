@@ -45,7 +45,7 @@ It has two target audiences: School aged children 5 to 13 and their parents.
 #### Player goals
 The target audience for this game is children aged 5 to 13 years old.
 
-Players goals are:
+**Players goals** are:
 - A fun game to play.
 - Child friendly controls.
 - All controls laid out intuitively. 
@@ -63,7 +63,7 @@ Whack-a-mole meets these needs because:
 Parents are concerned about the amount of time children can spend playing computer games and want to be able to control 
 identification and saving of information their child might enter into a website. 
 
-Parent's goals are:
+**Parent's goals** are:
 - Ability to reset or delete a stored player profile.
 - A fun, well-functioning game that can be extended in its' use so additional games don't need to be purchased. 
 - The ability to limit the time spent to finish a game.
@@ -92,16 +92,16 @@ Whack-a-mole meets these needs by:
 2. To know who developed the game and to be able to contact them easily. 
 
 ### Design Choices
-- Design choices were made to be visually appealing to young users easy to navigate and play the game. 
+- Design choices were made to be visually appealing to young users easy to navigate and play the game. Images are simple clear and colorful and the base site colors, sky blue, royal blue, lawn green and wide black borders for all sections are high in contrast and evoke a playful environment in which to play.
 
 **Fonts**
 - The primary font **Roboto** was chosen and **Sans Serif** is used as a back up in case of a failure to load.
 
 **Colors**
-- The main colors used are **light blue**, **royal blue**, and **lawn green**.
+- The main colors used are **light blue**, **royal blue**, **lawn green** and **black**.
 
 **Styling**
-- Styling is purposely colorful, complementary in contrast with large dark borders. Images are cartoon-like and brightly colored as well.
+- Styling is purposely colorful, and high in contrast and complementary, with large dark borders. Images are cartoon-like and brightly colored as well.
 
 **Backgrounds**
 - The header background is **light blue**.
@@ -119,7 +119,7 @@ Wireframes were created using [Balsamiq](https://balsamiq.com/) during the desig
 
 ## Features
 ### Existing Features
-1. Resizes autmatically for different screen sizes.
+1. Resizes automatically for different screen sizes.
 2. Automatically increases in difficulty as the game is played by speeding up.
 3. Provides for voluntary high score saving by using windows local storage.
 4. If high score is saved, it acknowledges when a new high score is reached.
@@ -167,29 +167,17 @@ Three different online tools were used to validate there were no syntax errors i
 - ![ExtendsClass Javascript test](/assets/images/jsTestSm.png "ExtendsClass Javascript validation results")
 
 ### User Stories
-As a player aged between 5-13 years old, I want:
-1. Easily understood and operated controls.
-2. Responsive and functional on all devices.
-3. Feedback to know when I have been successful or not.
-4. Increase the challenge when my abilities improve.
-5. Positive feedback when I hit a new high score.
-6. Appealing icons and images that I can understand.
-
-These needs are met by:
-1. One button to press to play the game.
-2. The game works on mobile and laptop devices.
-3. A succesful hit is registered by an image change.
-4. There is an automated increasing of speed of play.
-5. There is built in high score recognition.
-6. The images are fun and brightly colored.
-
-As a parent of a player, I want:
-1. An appealing game, so that my child and I can have a positive experience when using it.
-2. To know who developed the game and to be able to contact them easily. 
-
-These needs are met by:
-1. The game is responsive on all devices and platforms and design choices emphasize color and simple fun graphics.
-2. There is a simple footer that identifies the developer and provides links to social media for contact purposes.
+|User|Story|Application Feature or Design Element|
+|----|-----|-------------------------------------|
+|A player aged between 5-13 years old:|Easily understood and operated controls.|One button to press to play the game. One button to save the high score or not in a seperate alert.|
+||Responsive and functional on all devices.|The game was designed mobile first and works on mobile and laptop devices.|
+||Feedback to know when I have been successful or not.|A succesful hit is registered by an image change giving immediate positive feedback. Alerts at the end of the game let you know if you beat your high score or not.|
+||Increase the challenge when my abilities improve.|There is a built in feature, automatically increasing the speed of play.|
+||Positive feedback when I hit a new high score.|There is built in high score recognition during the session. Additionally, local storage is used to save the high score between sessions.|
+||Appealing icons and images that I can understand.|The images for the game are simple, cartoonish, fun and brightly colored. The icons for the social media links are standard and easily recognized.|
+|A parent of a player|An appealing game, so that my child and I can have a positive experience when using it.|The game is responsive on all devices and platforms and design choices emphasize color and simple fun graphics.|
+||To know who developed the game and to be able to contact them easily.|There is a simple footer that identifies the developer in the copyright information and provides links to multiple social media for contact purposes.|
+||||
 
 ## Technologies Used
 ### Langauges Used
@@ -205,12 +193,12 @@ These needs are met by:
 3. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used  to add icons for aesthetic and UX purposes.
 4. [jQuery 3.5.1:](https://jquery.com/)
-    - jQuery was added directly to the project in a minimized format to speed the loading of the functionality provided by jQuery.
+    - jQuery was used to simplify and add functionality.
 5. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 6. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-    - The **Code Insititue Full Template** was used as the base of the project and Eventyret's Bootstrap 4 extension was used to generate the boilreplate HTML file. [CI Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+    - The **Code Insititue Full Template** which is stored in Github, was used as the base of the project and Eventyret's Bootstrap 4 extension was used to generate the boilreplate HTML file. [CI Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 7. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 8. [EZ-gif:](https://ezgif.com/png-to-webp)

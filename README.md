@@ -261,7 +261,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - A significant portion of the code for this project was copied and edited from the previous projects I completed in the program.
 - Code for the game board grid was based upon guidance from the site [css-tricks.com](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Guidance for code to create the high score save yes/no modal was taken from [Stackoverflow](https://stackoverflow.com/questions/9334636/how-to-create-a-dialog-with-yes-and-no-options).
-
+- Guidance for local storage of high score and game count was taken from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ### Acknowledgements
 Special thanks to: 

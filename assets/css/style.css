@@ -61,6 +61,14 @@ h2 {
     font-weight: bold;
 }
 
+.high-score-hide {
+    display: none;
+}
+
+#hiScore {
+    font-weight: bold;
+}
+
 /*--Game area and board layout--*/
 
 .side-area {

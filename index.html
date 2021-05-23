@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="whack-a-mole is a reflex testing game that is fun to play and allows you to keep track of your high scores to test when you improve." />
-    <meta name="keywords" content="whack-a-mole, wack-a-mole, bash game, bash a mole, computer game, reflexes tester, mole game, speed game, reflexes, reflex game" />
+    <meta name="description"
+        content="whack-a-mole is a reflex testing game that is fun to play and allows you to keep track of your high scores to test when you improve." />
+    <meta name="keywords"
+        content="whack-a-mole, wack-a-mole, bash game, bash a mole, computer game, reflexes tester, mole game, speed game, reflexes, reflex game" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/sandstone/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="preload" as="font">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Whack-a-mole</title>
     <link rel="icon" href="data:,">
@@ -20,7 +21,7 @@
     <header class="row text-center no-gutters">
         <div class="col">
             <h1 class="d-inline">Whack-a-mole</h1>
-            <img class="head-image d-inline" src="assets/images/mole.webp" alt="Mole logo"/>
+            <img class="head-image d-inline" src="assets/images/mole.webp" alt="Mole logo" />
         </div>
         <br>
         <br>
@@ -29,11 +30,19 @@
     <!--Score & Timer-->
     <div class="row text-center no-gutters game-data center-content">
         <div class="col">
+
             <h2 class="d-inline col-6"><strong>Score: </strong></h2>
             <h2 class="d-inline" id="score"><strong>0</strong></h2>
 
             <h2 class="d-inline col-6"><strong>Time left: </strong></h2>
             <h2 class="d-inline" id="seconds"><strong>20</strong></h2>
+        </div>
+    </div>
+
+    <div class="row text-center no-gutters game-data center-content">
+        <div class="col high-score-hide" id = "high-score-display">
+            <h2 class="d-inline col-6"><strong>High Score: </strong></h2>
+            <h2 class="d-inline" id="hiScore"><strong>0</strong></h2>
         </div>
     </div>
 

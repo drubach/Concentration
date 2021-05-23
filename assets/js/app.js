@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const squares = $('.square');
     const mole = $('.mole');
     const time = $('#seconds');
+    const hiScoreDisplay = $('#high-score-display');
+    let hiScoreValue = $('#hiScore');
     let score = $('#score');
     let speed = 1000;
     let result = 0;
@@ -15,6 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let timerId2 = null;
     let timerId3 = null;
     let startBtn = $("#startBtn");
+
+    function storeCheck() {
+        if (localStorage.getItem('hiScore') >= 1) {
+            hiScore = localStorage.getItem('hiScore');
+            hiScoreDisplay.removeClass('high-score-hide');
+            hiScoreValue.text(hiScore);
+            gameCount = 2;
+        }
+    }
+
+    storeCheck();
 
     function randomSquare() {
         squares.removeClass('hammer');
@@ -41,10 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* Code to create this modal was taken from https://stackoverflow.com/questions/9334636/how-to-create-a-dialog-with-yes-and-no-options */
+    /* Code to create the local storage qwas taken from https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage */
     function scoreStore() {
         if (confirm('Would you like to keep track of your high score?')) {
             // Save it!
+            hiScoreDisplay.removeClass('high-score-hide');
             hiScore = result;
+            localStorage.setItem('hiScore', hiScore);
+            hiScoreValue.text(hiScore);
             console.log('Score saved.' + hiScore + 'gameCount' + gameCount);
         } else {
             // Do nothing!
@@ -52,12 +69,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return hiScore;
     }
+
     function scoreModal() {
         if (gameCount === 1) {
-            scoreStore();            
+            scoreStore();
         } else if (gameCount != 1 && hiScore > 0 && result > hiScore) {
             hiScore = result;
-            alert("Congratulations!! Your new high score is: " + hiScore);            
+            hiScoreValue.text(hiScore);
+            localStorage.setItem('hiScore', hiScore);
+            alert("Congratulations!! Your new high score is: " + hiScore);
         } else if (gameCount != 1 && hiScore > 0 && result <= hiScore) {
             alert("Great job! Try again to beat your high score of " + hiScore + ".");
         } else {
@@ -81,9 +101,9 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(timerId3)
             console.log('game over' + 'Game Count:' + gameCount);
             currentTime = time.text();
-            setTimeout(function (){
+            setTimeout(function () {
                 scoreModal();
-            },500);
+            }, 500);
             gameCount = gameCount + 1;
             console.log('game count:' + gameCount);
         }
@@ -96,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function speedChng() {
-        speed = speed - 200;
+        speed = speed - 300;
         return speed;
     }
 
